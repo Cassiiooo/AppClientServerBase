@@ -1,7 +1,7 @@
 dpublic class ClientSemplice {
     public static void main(String[] args) {
         final String hostname= "127.0.0.1";
-        int port = 1234;
+        int port = 12345;
 
         try (Socket socket = new Socket(hostname, port)) {
             PrintWriter out = new PrinterWriter(socket.getOutputStream(), true);
